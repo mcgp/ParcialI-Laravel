@@ -9,7 +9,7 @@
 
         <div class="form-group">
             <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre" class="form-control" value="{{ old('nombre') }}" required>
+            <input type="text" name="nombre" id="nombre" class="form-control" value="{{ $curso->nombre }}" required>
             @error('nombre')
                 <span class="invalid-feedback">{{ $message }}</span>
             @enderror
